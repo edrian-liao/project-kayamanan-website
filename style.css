@@ -1,5 +1,4 @@
-/* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap");
 
 @font-face {
   font-family: "Metropolis";
@@ -13,18 +12,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Metropolis";
-  src: url("fonts/Metropolis/Semi-bold/Metropolis-SemiBold.eot");
-  src: url("fonts/Metropolis/Semi-bold/Metropolis-SemiBold.eot")
-      format("embedded-opentype"),
-    url("fonts/Metropolis/Semi-bold/Metropolis-SemiBold.woff2") format("woff2"),
-    url("fonts/Metropolis/Semi-bold/Metropolis-SemiBold.woff") format("woff"),
-    url("fonts/Metropolis/Semi-bold/Metropolis-SemiBold.ttf") format("truetype");
-  font-weight: bold; /* was "bold" */
-  font-style: normal;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -32,17 +19,43 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Inter";
-  font-style: normal;
-  color: #000000;
+  background-color: #e5e5e5;
 }
 
-.container {
+.top {
+  background-color: #8cd4c9;
+}
+
+header {
   width: 100%;
-  height: 100%;
-  display: grid;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navBar {
+  display: flex;
+  font-family: "Metropolis", "PT Sans", sans-serif;
+  width: 100%;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.headerLinks {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 10%;
+  padding-right: 5%;
+  width: 100%;
+  height: 100px;
+}
+
+.navBar img {
+  margin-left: 5%;
+  width: 120px;
+  height: auto;
 }
 
 .navBar li a {
@@ -50,91 +63,68 @@ body {
   text-decoration: none;
 }
 
-.navBar {
-  display: flex;
-  font-family: "Metropolis", "PT Sans", sans-serif;
-  width: 100%;
-  background-color: #ffc840;
-  align-items: center;
-  /* gap: 1%; */
-
-  /* justify-content: center; */
-}
-
 .navBar li {
-  font-weight: bold; /* was 700 */
-  font-size: 25px;
-  line-height: 250%;
-  /* padding: 30px auto; */
   list-style-type: none;
-  text-align: center;
-  width: 25%;
-  /* border: 2px solid #000000;
-  border-top: 0px;
-  border-width: 0px 2px 0px 0px; */
-}
-
-.navBar-NotLast {
-  border: 2px solid #000000;
-  border-top: 0px;
-  border-width: 0px 2px 0px 0px;
-}
-
-.navBar img {
-  width: 100px;
-  height: 100px;
+  flex: 0 1 auto;
 }
 
 .navBar li a:hover {
   color: #6452a2;
 }
 
-.hero {
-  font-family: Nunito;
-  text-align: center;
-  background: #5cc1b2;
+.navBar li button {
+  height: 50px;
+  width: 80px;
+  font-family: "Metropolis", "PT Sans", sans-serif;
+  background-color: #398e82;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
 }
 
-.hero h1 {
-  padding: 100px;
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 102px;
+.navBar li button:hover {
   color: #6452a2;
 }
 
-#aboutUs {
-  padding: 20px 20px 20px 20px;
-  background-color: #ffefc3;
+.heroContent {
+  margin-top: 30px;
+  padding-bottom: 20px;
   display: flex;
-  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  gap: 3%;
+  justify-content: center;
   align-items: center;
-  gap: 5%;
 }
 
-#aboutUsText {
-  padding: 4%;
-
-  border: 5px solid #48c0ef;
-  border-radius: 80px;
-  /* width: 797.55px;
-  height: 360.72px; */
+.heroText {
+  padding-left: 5%;
+  padding-right: 2%;
 }
 
-#aboutUs h2 {
-  font-family: Metropolis, "PT Sans", sans-serif;
-  font-size: 30px;
+.heroContent h1 {
+  font-size: 50px;
+  font-family: "Fira Sans", sans-serif;
   font-weight: bold;
-  color: #6452a2;
+  color: #6352a2;
+  text-align: left;
+  align-content: center;
 }
 
-#aboutUs p {
-  padding-top: 15px;
-  font-family: Metropolis, "PT Sans", sans-serif;
-  font-size: 20px;
+.heroContent p {
+  padding-top: 20px;
+  font-size: 18px;
+
+  font-family: "Metropolis", "PT Sans", sans-serif;
+  text-align: left;
 }
 
-#aboutUs img {
-  width: 30%;
+.hero img {
+  width: 55%;
   height: auto;
+  flex: 0 1 auto;
+}
+
+.heroNav {
+  padding-left: 50%;
+  padding-bottom: 20px;
 }
