@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
 @font-face {
   font-family: "Metropolis";
@@ -43,7 +43,7 @@ header {
   position: fixed;
   top: 0;
   background-color: #8cd4c9;
-  box-shadow: 0 2px 2px 1px rgba(0,0,0,.2);
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .headerLinks {
@@ -110,7 +110,7 @@ header {
 
 .heroContent h1 {
   font-size: 60px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Fira Sans", "PT Sans", sans-serif;
   font-weight: bold;
   color: #6352a2;
   text-align: left;
@@ -121,7 +121,7 @@ header {
   padding-top: 20px;
   font-size: 18px;
   line-height: 1.5;
-  font-family: "Fire Sans", "PT Sans", sans-serif;
+  font-family: "Metropolis", "PT Sans", sans-serif;
   text-align: left;
 }
 
@@ -159,12 +159,11 @@ header {
   text-align: center;
   font-size: 40px;
   color: #6352a2;
-  
 }
 
 .aboutusContent p {
   padding-top: 20px;
-  font-family: "Fire Sans", "PT Sans", sans-serif;
+  font-family: "Metropolis", "PT Sans", sans-serif;
   text-align: left;
   font-size: 18px;
   padding-left: 60%;
@@ -193,10 +192,10 @@ header {
   margin-bottom: 20%;
   display: inline-block;
   background: rgba(92, 193, 178, 0.8);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   transform: rotate(38.41deg);
-
 }
 .dot {
   cursor: pointer;
@@ -207,4 +206,94 @@ header {
   border-radius: 100%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+.getInvolved {
+  background-color: #e7f6f3;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.getInvolved h2 {
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #6352a2;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.getInvolved p {
+  padding-top: 20px;
+  font-family: "Metropolis", "PT Sans", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  padding-left: 15%;
+  padding-right: 15%;
+  line-height: 1.5;
+}
+
+.getInvolvedCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 5% 0 5%;
+  gap: 5%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cards .getInvolvedCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0%;
+}
+
+.cards img {
+  width: 15%;
+  height: auto;
+  flex: 0 1 auto;
+  float: right;
+  display: flex;
+  /* margin-right: 5%; */
+}
+
+.cards h3 {
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #0a6154;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.cards p {
+  padding-top: 20px;
+  font-family: "Metropolis", "PT Sans", sans-serif;
+  text-align: center;
+  font-size: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 1.5;
+}
+
+.cards button {
+  height: 75px;
+  width: 150px;
+  font-family: "Metropolis", "PT Sans", sans-serif;
+  background-color: #0a6154;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 15px;
+  font-family: "Metropolis", "PT Sans", sans-serif;
 }
