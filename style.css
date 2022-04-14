@@ -151,15 +151,15 @@ header {
 }
 
 .aboutusText {
-  margin-top: 7%;
+  margin-top: 10%;
   margin-right: -5%;
-  margin-left: -20%;
+  margin-left: 55%;
 }
 
 .aboutusContent h2 {
   font-family: "Fira Sans", sans-serif;
   font-weight: normal;
-  text-align: center;
+  text-align: left;
   font-size: 40px;
   color: #6352a2;
 }
@@ -169,12 +169,11 @@ header {
   font-family: "PT Sans", "Metropolis", sans-serif;
   text-align: left;
   font-size: 18px;
-  margin-left: 60%;
   line-height: 1.5;
 }
 
 .aboutusContent img {
-  margin-top: 7%;
+  margin-top: 10%;
   border: 8px solid #398e82;
   border-radius: 40px;
   padding-bottom: 20px;
@@ -190,7 +189,7 @@ header {
   position: relative;
   width: 120px;
   right: -35px;
-  top: -70px;
+  top: -80px;
 }
 .dot {
   cursor: pointer;
@@ -205,7 +204,7 @@ header {
 
 .getInvolved {
   background-color: #e7f6f3;
-  padding-top: 80px;
+  padding-top: 100px;
   padding-bottom: 80px;
 }
 
