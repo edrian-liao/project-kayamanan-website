@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Sans&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
 @font-face {
@@ -186,7 +186,7 @@ header {
   float: left;
 }
 
-.polygon img{
+.polygon img {
   position: relative;
   width: 150px;
   top: -80px;
@@ -250,6 +250,7 @@ header {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 50%;
 }
 
 .cards .getInvolvedCardHeader {
@@ -297,4 +298,58 @@ header {
   margin-top: 20px;
   font-size: 15px;
   font-family: "Metropolis", "PT Sans", sans-serif;
+}
+
+.footerContainer {
+  display: flex;
+  background-color: #000000;
+  justify-content: center;
+  gap: 200px;
+  align-items: center;
+}
+
+.footerLogo {
+  height: 100px;
+}
+
+.logoInfoFooter p {
+  font-family: "Metropolis", "PT Sans", sans-serif;
+  font-size: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.footerLinks a {
+  color: #ffffff;
+  font-family: "Metropolis", "PT Sans", sans-serif;
+}
+
+.footerLinks ul {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.footerLinks li {
+  padding-top: 20px;
+}
+
+.socials p {
+  font-family: "Metropolis", "PT Sans", sans-serif;
+  font-size: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.socials ul {
+  display: flex;
+  gap: 20px;
+}
+
+.socials img {
+  height: 30px;
+  width: auto;
 }
