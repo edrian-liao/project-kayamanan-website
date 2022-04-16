@@ -42,6 +42,7 @@ header {
   width: 100%;
   align-items: center;
   position: fixed;
+  z-index: 1;
   top: 0;
   background-color: #8cd4c9;
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -142,7 +143,7 @@ header {
 
 .aboutus {
   background-color: white;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: center;
@@ -152,8 +153,8 @@ header {
 
 .aboutusText {
   margin-top: 10%;
-  margin-right: -5%;
   margin-left: 55%;
+  margin-right: 5%;
 }
 
 .aboutusContent h2 {
@@ -187,10 +188,15 @@ header {
 
 .polygon img{
   position: relative;
-  width: 120px;
-  right: -35px;
+  width: 150px;
   top: -80px;
+  right: 45%;
+  display: flex;
+  flex: 0 1 auto;
+  max-width: 200%;
+  height: auto;
 }
+
 .dot {
   cursor: pointer;
   height: 10px;
