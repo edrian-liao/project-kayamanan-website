@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
 @font-face {
@@ -41,6 +42,7 @@ header {
   width: 100%;
   align-items: center;
   position: fixed;
+  z-index: 1;
   top: 0;
   background-color: #8cd4c9;
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -118,10 +120,10 @@ header {
 }
 
 .heroContent p {
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 18px;
   line-height: 1.5;
-  font-family: "Metropolis", "PT Sans", sans-serif;
+  font-family: "PT Sans", "Metropolis", sans-serif;
   text-align: left;
 }
 
@@ -141,62 +143,60 @@ header {
 
 .aboutus {
   background-color: white;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   display: flex;
   /* flex-wrap: wrap; */
-  gap: 3%;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 
 .aboutusText {
-  margin-top: 7%;
-  padding-right: 5%;
+  margin-top: 10%;
+  margin-left: 55%;
+  margin-right: 5%;
 }
 
 .aboutusContent h2 {
   font-family: "Fira Sans", sans-serif;
-  text-align: center;
+  font-weight: normal;
+  text-align: left;
   font-size: 40px;
   color: #6352a2;
 }
 
 .aboutusContent p {
   padding-top: 20px;
-  font-family: "Metropolis", "PT Sans", sans-serif;
+  font-family: "PT Sans", "Metropolis", sans-serif;
   text-align: left;
   font-size: 18px;
-  padding-left: 60%;
   line-height: 1.5;
 }
 
 .aboutusContent img {
-  margin-top: 7%;
+  margin-top: 10%;
   border: 8px solid #398e82;
   border-radius: 40px;
   padding-bottom: 20px;
   display: flex;
   gap: 3%;
   width: 45%;
-  justify-content: center;
   margin-left: 5%;
   flex: 0 1 auto;
   float: left;
 }
 
-.polygon {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  left: 95%;
-  margin-bottom: 20%;
-  display: inline-block;
-  background: rgba(92, 193, 178, 0.8);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
-    inset 2px 2px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  transform: rotate(38.41deg);
+.polygon img{
+  position: relative;
+  width: 150px;
+  top: -80px;
+  right: 45%;
+  display: flex;
+  flex: 0 1 auto;
+  max-width: 200%;
+  height: auto;
 }
+
 .dot {
   cursor: pointer;
   height: 10px;
@@ -210,12 +210,13 @@ header {
 
 .getInvolved {
   background-color: #e7f6f3;
-  padding-top: 80px;
+  padding-top: 100px;
   padding-bottom: 80px;
 }
 
 .getInvolved h2 {
   font-family: "Fira Sans", sans-serif;
+  font-weight: normal;
   text-align: center;
   font-size: 40px;
   color: #6352a2;
