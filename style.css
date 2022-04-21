@@ -186,9 +186,9 @@ header {
 
 .polygon img {
   position: relative;
-  width: 150px;
-  top: -80px;
-  right: 45%;
+  width: 130px;
+  top: -30px;
+  right: 97%;
   display: flex;
   flex: 0 1 auto;
   max-width: 200%;
@@ -348,7 +348,7 @@ header {
   padding-top: 20px;
 }
 
-.signupAdditional input[type=text]{
+.signupAdditional textarea{
   box-shadow: 0 3px 2px 1px rgba(0, 0, 0, 0.2);
   border-color: rgba(0, 0, 0, 0.2);
   border-width: thin;
