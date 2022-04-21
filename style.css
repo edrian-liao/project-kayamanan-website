@@ -144,15 +144,14 @@ header {
 .aboutus {
   background-color: white;
   padding-bottom: 100px;
+  padding-top: 100px;
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: center;
-  align-items: center;
   height: auto;
 }
 
 .aboutusText {
-  margin-top: 10%;
   margin-left: 55%;
   margin-right: 5%;
 }
@@ -174,7 +173,6 @@ header {
 }
 
 .aboutusContent img {
-  margin-top: 10%;
   border: 8px solid #398e82;
   border-radius: 40px;
   padding-bottom: 20px;
@@ -270,6 +268,7 @@ header {
 
 .cards h3 {
   font-family: "Fira Sans", sans-serif;
+  font-weight: normal;
   text-align: center;
   font-size: 30px;
   color: #0a6154;
@@ -298,6 +297,93 @@ header {
   margin-top: 20px;
   font-size: 15px;
   font-family: "Metropolis", "PT Sans", sans-serif;
+}
+
+.signupform {
+  background-color: white;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  /* flex-wrap: wrap; */
+  height: auto;
+  width: 100%;
+}
+
+.signupContent {
+  border: 4px solid #0A6154;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.signupContent h1 {
+  padding-left: 40px;
+  border: 4px solid #0A6154;
+  background-color: #0A6154;
+  font-family: "Fire Sans", "PT Sans", sans-serif;
+  font-weight: normal;
+  color: white;
+  font-size: 30px;
+}
+
+.signupText{
+  padding: 20px 40px 20px 40px;
+  font-family: "Fire Sans", "PT Sans", sans-serif;
+  font-weight: normal;
+  color: gray;
+}
+
+.signupText ul{
+  line-height: 3;
+  list-style-type: none;
+}
+
+.signupAs{
+  line-height: 1.5;
+  padding-top: 20px;
+}
+
+.signupAdditional{
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5;
+  padding-top: 20px;
+}
+
+.signupAdditional input[type=text]{
+  box-shadow: 0 3px 2px 1px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.2);
+  border-width: thin;
+  width: 60%;
+  height: 100px;
+  margin: 5px 0px 0px 0;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+.signupText ul input[type=text] {
+  padding: 10px;
+  width: 60%;
+  margin: 12px 0px 0px 0;
+  border-width: thin;
+  border-color: rgba(0, 0, 0, 0.2);
+  background: white;
+  box-shadow: 0 3px 2px 1px rgba(0, 0, 0, 0.2);
+  height: 20px;
+  float: right;
+  border-radius: 5px;
+}
+
+.signupContent button {
+  display: block;
+  margin: 40px auto;
+  height: 35px;
+  width: 100px;
+  background-color: #0a6154;
+  font-family: "PT Sans", "Fire Sans", sans-serif;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
 }
 
 .footerContainer {
