@@ -17,7 +17,7 @@
             <li><a href="#top">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#getInvolved">Get Involved</a></li>
-            <li><button href="#signUp">Sign Up</button></li>
+            <li><a href="#signUp"><button >Sign Up</button></a></li>
           </div>
         </ul>
       </header>
@@ -99,7 +99,42 @@
       </div>
     </div>
 
-    <div class="signupform" id="signUp"></div>
+    <div class="signupform" id="signUp">  
+      <form action = "signup.php">
+        <div class="signupContent">
+          <h1>Sign Up Form</h1>
+          <div class = "signupText">
+            <ul> 
+              <li> 
+                <label for="fullname">Full Name</label>
+                <input type="text" name="fullname" id="fullname" required>
+              </li>
+              <li>
+                <label for="email">Email Address</label>
+              <input type="text" name="email" id="email" required>
+              </li>
+              <li>
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone" required>
+              </li>
+            </ul>
+            <div class = "signupAs">
+              <p> You are signing up as: </p>
+              <input type="radio" id="donator" name="identity" value="donator">
+              <label for="radio">Donator</label>
+              <br>
+              <input type="radio" id="student" name="identity" value="student">
+              <label for="radio">Student Participant</label>
+            </div>
+            <div class = "signupAdditional">
+              <label for="additionalinfo">Additional <br> Information <br> (optional)</label>
+              <input type="text" name="fullname" id="fullname">
+            </div>
+          </div>
+          <button type="submit" class="submitbutton">Submit</button>
+        </div>
+      </form>   
+    </div>
 
     <footer>
       <div class="footerContainer">
