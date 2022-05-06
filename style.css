@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 
 @font-face {
   font-family: "Metropolis";
@@ -18,6 +19,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html { 
+  scroll-behavior: smooth; 
 }
 
 body {
@@ -38,13 +43,14 @@ header {
 
 .navBar {
   display: flex;
-  font-family: "Metropolis", "PT Sans", sans-serif;
+  font-family: "PT Sans", "Metropolis",  sans-serif;
+  font-weight: bold;
   width: 100%;
   align-items: center;
   position: fixed;
   z-index: 1;
   top: 0;
-  background-color: #8cd4c9;
+  background-color: white;
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -59,15 +65,15 @@ header {
 }
 
 .navBar img {
-  margin-left: 5%;
-  width: 12%;
+  margin-left: 3%;
+  width: 18%;
   height: auto;
   margin-top: -1%;
   object-fit: contain;
 }
 
 .navBar li a {
-  color: #000000;
+  color: #398E82;
   text-decoration: none;
 }
 
@@ -83,7 +89,8 @@ header {
 .navBar li button {
   height: 50px;
   width: 100px;
-  font-family: "Metropolis", "PT Sans", sans-serif;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  font-weight: bold;
   background-color: #398e82;
   color: #ffffff;
   border: none;
@@ -95,19 +102,92 @@ header {
   color: #6452a2;
 }
 
-.heroContent {
-  margin-top: 80px;
-  padding-bottom: 50px;
-  display: flex;
-  /* flex-wrap: wrap; */
-  gap: 3%;
-  justify-content: center;
-  align-items: center;
+.hero {
+  overflow: hidden;
+  text-align: center;
 }
 
-.heroText {
+.heronav {
+  display: inline-flex;
+  width: 10px;
+  height: 10px;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+.heronav:hover {
+  background: #6352a2;
+}
+
+.heronav:active {
+  top: 1px;
+}
+
+.heroslides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 30px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.heroslides::-webkit-scrollbar {
+  display: none;
+}
+
+.heroslides div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#hero-1, #hero-2, #hero-3 {
+  scroll-margin-top: 100px;
+}
+
+#hero-1 {
+  margin-top: 80px;
+  display: flex;
+  flex: 1 0 auto;
+  /* flex-wrap: wrap; */
+  gap: 3%;
+}
+
+#hero-2, #hero-3 {
+  display: flex;
+  gap: 3%;
+  flex: 1 0 auto;
+}
+
+.hero1Text {
   padding-left: 5%;
   padding-right: 2%;
+  flex-basis: 40%;
+
+}
+
+.hero2Text {
+  flex-basis: 50%;
+  padding-left: 5%;
+}
+
+.hero3Text { 
+  flex-basis: 60%;
+  margin-left: 5%;
 }
 
 .heroContent h1 {
@@ -116,7 +196,18 @@ header {
   font-weight: bold;
   color: #6352a2;
   text-align: left;
-  align-content: center;
+  align-content: left;
+  width: 40%;
+}
+
+#hero-2 h1 {
+  margin-top: 60px;
+  width: 100%;
+}
+
+#hero-3 h1 {
+  margin-top: 60px;
+  width: 100%;
 }
 
 .heroContent p {
@@ -127,18 +218,70 @@ header {
   text-align: left;
 }
 
-.hero img {
+#hero-2 p, #hero-3 p{
+  width: 80%;
+}
+
+
+#hero-1 img {
   width: 50%;
   height: auto;
   flex: 0 1 auto;
   float: right;
-  display: flex;
-  margin-right: 5%;
+  margin-left: 5%;
+  object-fit: contain;
 }
 
-.heroNav {
-  padding-left: 50%;
-  padding-bottom: 20px;
+#hero-2 img {
+  width: 40%;
+  height: auto;
+  flex: 0 1 auto;
+  float: left;
+  margin-left: 3%;
+  padding-top: 70px;
+  object-fit: contain;
+}
+
+#hero-3 img {
+  width: 23%;
+  height: auto;
+  display: flex;
+  flex: 0 1 auto;
+  padding-top: 10px;
+  object-fit: contain;
+}
+
+#hero-1 button {
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  margin-top: 20px;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  font-weight: bold;
+  background-color: #0A6154;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  text-align: center;
+  align-self: left;
+  left: 5%;
+}
+
+#hero-2 button {
+  position: absolute;
+  height: 50px;
+  width: 150px;
+  margin-top: 20px;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  font-weight: bold;
+  background-color: #0A6154;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  text-align: center;
+  left: 0;
 }
 
 .aboutus {
@@ -149,6 +292,7 @@ header {
   /* flex-wrap: wrap; */
   justify-content: center;
   height: auto;
+  scroll-margin-top: 80px;
 }
 
 .aboutusText {
@@ -210,6 +354,7 @@ header {
   background-color: #e7f6f3;
   padding-top: 100px;
   padding-bottom: 80px;
+  scroll-margin-top: 80px;
 }
 
 .getInvolved h2 {
@@ -241,6 +386,7 @@ header {
 }
 
 .cards {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -249,6 +395,7 @@ header {
   border-radius: 10px;
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
   width: 50%;
+  min-height: 420px;
 }
 
 .cards .getInvolvedCardHeader {
@@ -257,8 +404,12 @@ header {
   gap: 0%;
 }
 
-.cards img {
-  width: 15%;
+.getInvolvedBody {
+  display: flex;
+}
+
+.getInvolvedCardHeader img {
+  width: 20%;
   height: auto;
   flex: 0 1 auto;
   float: right;
@@ -269,48 +420,94 @@ header {
 .cards h3 {
   font-family: "Fira Sans", sans-serif;
   font-weight: normal;
-  text-align: center;
+  text-align: left;
   font-size: 30px;
   color: #0a6154;
-  padding-left: 5%;
+  padding-left: 7%;
   padding-right: 5%;
+}
+
+.getInvolvedBody img {
+  width: 5%;
+  height: 200px;
+  padding-top: 7%;
+}
+
+#signUpCard .getInvolvedBody img {
+  margin-top: -2%;
 }
 
 .cards p {
   padding-top: 20px;
-  font-family: "Metropolis", "PT Sans", sans-serif;
-  text-align: center;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  text-align: left;
   font-size: 15px;
   padding-left: 5%;
   padding-right: 5%;
   line-height: 1.5;
+  padding-bottom: 100px;
 }
 
 .cards button {
-  height: 75px;
-  width: 150px;
-  font-family: "Metropolis", "PT Sans", sans-serif;
+  height: 50px;
+  width: 100px;
   background-color: #0a6154;
   color: #ffffff;
   border: none;
   border-radius: 20px;
   margin-top: 20px;
   font-size: 15px;
-  font-family: "Metropolis", "PT Sans", sans-serif;
+  font-family:  "PT Sans", "Metropolis", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10%;
 }
 
 .signupform {
   background-color: white;
   padding-bottom: 10%;
-  padding-top: 10%;
-  /* flex-wrap: wrap; */
   height: auto;
   width: 100%;
+  overflow: hidden;
+}
+
+#su-1 {
+  position: relative;
+  width: 10%;
+  height: 10%;
+  top: 160px;
+}
+
+#su-2 {
+  width: 12%;
+  height: 12%;
+  position: relative;
+  top: 500px;
+  margin-right: 5%;
+  margin-left: -2%;
+}
+
+#su-3 {
+  width: 10%;
+  height: 10%;
+  position: relative;
+  left: 57%;
+  top: 20px;
+}
+
+#su-4 {
+  position: relative;
+  width: 15%;
+  height: 15%;
+  top: 400px;
+  margin-right: -5%;
+  float: right;
 }
 
 .signupContent {
   border: 4px solid #0A6154;
   margin: 0 auto;
+  margin-top: -40px;
   width: 50%;
 }
 
@@ -360,7 +557,7 @@ header {
 }
 
 
-.signupText ul input[type=text] {
+.signupText ul input {
   padding: 10px;
   width: 60%;
   margin: 12px 0px 0px 0;
@@ -380,6 +577,7 @@ header {
   width: 100px;
   background-color: #0a6154;
   font-family: "PT Sans", "Fire Sans", sans-serif;
+  font-weight: bold;
   color: #ffffff;
   border: none;
   border-radius: 12px;
@@ -387,29 +585,34 @@ header {
 }
 
 .footerContainer {
+  padding-top: 20px;
   display: flex;
   background-color: #000000;
-  justify-content: center;
-  gap: 200px;
-  align-items: center;
+  justify-content: space-between;
+  align-items: left;
+  gap: 100px;
 }
 
+.logoInfoFooter {
+  width: 30%;
+}
 .footerLogo {
   height: 100px;
+  margin-top: 20px;
 }
 
 .logoInfoFooter p {
-  font-family: "Metropolis", "PT Sans", sans-serif;
+  font-family: "PT Sans", "Metropolis", sans-serif;
   font-size: 15px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 40px;
+  padding-right: -10%;
   line-height: 1.5;
   color: #ffffff;
 }
 
 .footerLinks a {
   color: #ffffff;
-  font-family: "Metropolis", "PT Sans", sans-serif;
+  font-family: "PT Sans", "Metropolis", sans-serif;
 }
 
 .footerLinks ul {
@@ -418,13 +621,15 @@ header {
 }
 
 .footerLinks li {
-  padding-top: 20px;
+  margin-bottom: 15px;
 }
+
 
 .socials p {
   font-family: "Metropolis", "PT Sans", sans-serif;
   font-size: 15px;
   padding-left: 5%;
+  padding-top: 40px;
   padding-right: 5%;
   line-height: 1.5;
   color: #ffffff;
@@ -433,6 +638,8 @@ header {
 .socials ul {
   display: flex;
   gap: 20px;
+  padding-top: 10px;
+  padding-right: 40px;
 }
 
 .socials img {
