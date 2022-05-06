@@ -14,30 +14,51 @@
         <ul class="navBar">
           <img src="img/logo.png" />
           <div class="headerLinks">
-            <li><a href="#top">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#getInvolved">Get Involved</a></li>
-            <li><a href="#signUp"><button >Sign Up</button></a></li>
+            <li><a href="#top">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#getInvolved">GET INVOLVED</a></li>
+            <li><a href="#signUp"><button >SIGN UP</button></a></li>
           </div>
         </ul>
       </header>
       <div class="hero">
-        <div class="heroContent">
-          <div class="heroText">
-            <h1>PROJECT KAYAMANAN</h1>
-            <p>
-              PK 2.0 - A free online peer financial education program for
-              Filipino public high school students
-            </p>
+        <div class="heroslides">
+          <div class="heroContent" id="hero-1">
+            <div class="hero1Text">
+              <h1>PROJECT KAYAMANAN</h1>
+              <p>
+                PK 2.0 - A free online peer financial education program for
+                Filipino public high school students
+              </p>
+              <!--  Is this necessary? <a href="#"><button >Learn More</button></a> -->
+            </div>
+            <img src="img/hero/hero-img1.png" />
           </div>
-          <img src="img/hero-img1.png" />
+          <div class="heroContent" id="hero-2">
+            <img src="img/hero/hero-img2.png"/>
+            <div class="hero2Text">
+              <h1>WHY PROJECT KAYAMANAN?</h1>
+              <p>
+                PK is a fun, creative, and reward based personal finance program. 
+                It is also the first online peer financial education program for high school students.
+              </p>
+              <!-- Is this necessary? <a href="#signUp"><button >Connect With Us</button></a> -->
+            </div>
+          </div>
+          <div class="heroContent" id="hero-3">
+            <img src="img/hero/hero-img3.png"/>
+            <div class="hero3Text">
+              <h1>COME JOIN <br>PROJECT KAYAMANAN</h1>
+              <p>
+                You can join whether you are a donator, participant (in high school), 
+                or simply want to let more people know about PK.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="heroNav">
-          <!-- PLACEHOLDER FOR NOW -->
-          <span class="dot" onclick=""></span>
-          <span class="dot" onclick=""></span>
-          <span class="dot" onclick=""></span>
-        </div>
+        <a href="#hero-1" class="heronav"></a>
+        <a href="#hero-2" class="heronav"></a>
+        <a href="#hero-3" class="heronav"></a>
       </div>
     </div>
 
@@ -75,12 +96,14 @@
             <img src="img/cards/Donate.png" />
             <h3>Donate</h3>
           </div>
-          <p>
-            We aim to raise a fund of Php 750,000. Thus, monetary donation of
-            any value will be greatly appreciated for helping us to move toward
-            our final goal. Regardless of where you at and the currency of your
-            country, you can help us directly by signing up below.
-          </p>
+          <div class="getInvolvedBody">
+            <p>
+              We aim to raise a fund of Php 750,000. Thus, monetary donation of
+              any value will be greatly appreciated for helping us to move toward
+              our final goal. Regardless of where you at and the currency of your
+              country, you can help us directly by signing up below.
+            </p>
+          </div>
           <button>Donate</button>
         </div>
         <div class="cards" id="signUpCard">
@@ -88,18 +111,26 @@
             <img src="img/cards/SignUp.png" />
             <h3>Sign up as a participant</h3>
           </div>
-          <p>
-            Are you a high school student who is looking for an opportunity to
-            be financially educated? Are you unsure about financial processes,
-            bank accounts, and all those “mysterious” financial terms? Sign up
-            now to join this online program!
-          </p>
+          <div class="getInvolvedBody">
+            <p>
+              Are you a high school student who is looking for an opportunity to
+              be financially educated? Are you unsure about financial processes,
+              bank accounts, and all those “mysterious” financial terms? Sign up
+              now to join this online program!
+            </p>
+          </div>
           <button>Sign Up</button>
         </div>
       </div>
     </div>
 
     <div class="signupform" id="signUp">  
+      <div class="signupPolygons">
+        <img id="su-1" src="img/signup/su_polygon4.png"/>
+        <img id="su-2" src="img/signup/su_polygon2.png"/>
+        <img id="su-3" src="img/signup/su_polygon1.png"/>
+        <img id="su-4" src="img/signup/su_polygon3.png"/>
+      </div>
       <form action = "signup.php">
         <div class="signupContent">
           <h1>Sign Up Form</h1>
@@ -111,11 +142,11 @@
               </li>
               <li>
                 <label for="email">Email Address</label>
-              <input type="text" name="email" id="email" required>
+              <input type="email" name="email" id="email" required>
               </li>
               <li>
                 <label for="phone">Phone Number</label>
-                <input type="text" name="phone" id="phone" required>
+                <input type="tel" name="phone" id="phone" required>
               </li>
             </ul>
             <div class = "signupAs">
@@ -133,7 +164,7 @@
           </div>
           <button type="submit" class="submitbutton">Submit</button>
         </div>
-      </form>   
+      </form>  
     </div>
 
     <footer>
