@@ -646,3 +646,119 @@ header {
   height: 30px;
   width: auto;
 }
+
+.ourobjectives {
+  background-color: white;
+}
+
+.ourobjectives h2 {
+  margin-top: 14px;
+  margin-bottom: 67px;
+  text-align: center;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 72px;
+  color: #6452A2;
+}
+
+.elements-row-1 {
+  margin: 0 13%;
+  display: flex;
+  margin-bottom: 69px;
+  justify-content: space-around;
+}
+
+.elements-row-2 {
+  margin: 0 4%;
+  display: flex;
+  margin-bottom: 65px;
+  justify-content: space-around;
+}
+
+.element {
+  width: 300px;
+  min-width: 270px;
+  height: 110px;
+  
+  border: 5px solid #398E82;
+  filter: drop-shadow(-3px 10px 20px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  display: flex;
+}
+
+.number {
+  background: #398E82;
+  font-family: 'PT Sans';
+  text-align: center;
+  width: 64px;
+
+  min-width: 64px;
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 95px;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+  color: #FFFFFF;
+}
+
+.ele-text {
+  padding: 5%;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 23px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.quote {
+  background-image: url(img/quote-block.svg);
+  height: 640px;
+  width: 100%;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 80px;
+}
+.quote-first-line {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+#finance {
+  height: auto;
+  object-fit: contain;
+  margin: 2%;
+}
+
+#left-quote {
+  height: 60%;
+}
+
+#right-quote {
+  padding-top: 10%;
+}
+
+#alan {
+  display: block;
+  margin-left: auto;
+  margin-right: 25%;
+}
+
+.divider {
+  box-sizing: border-box;
+  margin: 0 5%;
+
+
+border: 8px dashed rgba(92, 193, 178, 0.7);
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.polygon2 {
+  margin-top: -130px;
+}
