@@ -212,7 +212,7 @@ header {
 
 .heroContent p {
   padding-top: 10px;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.5;
   font-family: "PT Sans", "Metropolis", sans-serif;
   text-align: left;
@@ -220,41 +220,44 @@ header {
 
 #hero-2 p, #hero-3 p{
   width: 80%;
+  font-size: 30px;
 }
 
 
 #hero-1 img {
-  width: 50%;
+  width: 45%;
   height: auto;
   flex: 0 1 auto;
   float: right;
-  margin-left: 5%;
+  margin-left: 7.5%;
   object-fit: contain;
 }
 
 #hero-2 img {
-  width: 40%;
+  width: 30%;
   height: auto;
   flex: 0 1 auto;
   float: left;
-  margin-left: 3%;
+  margin-left: 10%;
   padding-top: 70px;
+  margin-right: 7%;
   object-fit: contain;
 }
 
 #hero-3 img {
-  width: 23%;
+  width: 35%;
   height: auto;
   display: flex;
   flex: 0 1 auto;
-  padding-top: 10px;
+  padding-top: 20px;
   object-fit: contain;
+  margin-left: 5%;
 }
 
 #hero-1 button {
   position: absolute;
   height: 50px;
-  width: 100px;
+  width: 140px;
   margin-top: 20px;
   font-family: "PT Sans", "Metropolis", sans-serif;
   font-weight: bold;
@@ -262,10 +265,10 @@ header {
   color: #ffffff;
   border: none;
   border-radius: 20px;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   align-self: left;
-  left: 5%;
+  left: 30%;
 }
 
 #hero-2 button {
