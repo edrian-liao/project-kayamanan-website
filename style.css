@@ -666,6 +666,73 @@ header {
   color: #6452A2;
 }
 
+.ourprogram {
+    background-color: #e7f6f3;
+    padding-bottom: 80px;
+    padding-left: 130px;
+    padding-right: 130px;
+    scroll-margin-top: 100px;
+  
+}
+
+.ourprogram h2 {
+  text-align: center;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 72px;
+  color: #6452A2;
+}
+
+.OurProgramsCard {
+  background-color: #e7f6f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5% 0 5%;
+  gap: 10%;
+  padding-bottom: 20px;
+}
+
+.OurProgramsSmallCards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2); */
+  width: 50%;
+  min-height: 20px;
+  max-width: 700px;
+}
+
+
+.OurProgramsSmallCards h4 {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: capitalize;
+  color: #0A6154;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.OurProgramsSmallCards p {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #000000;
+  text-align: left;
+}
+
+
 .elements-row-1 {
   margin: 0 13%;
   display: flex;
