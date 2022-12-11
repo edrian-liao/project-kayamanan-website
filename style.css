@@ -832,3 +832,68 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 .polygon2 {
   margin-top: -130px;
 }
+
+/* Our Programs Design Portion */
+
+.programTitle {
+  font-size: 40px;
+  font-family: "Fira Sans", "PT Sans", sans-serif;
+  font-weight: bold;
+  color: #6352a2;
+  text-align: center;
+  padding-top: 30px;
+  background-color:#a9cdc8;
+}
+
+.programs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color:#a9cdc8;
+  padding-bottom: 30px;
+}
+
+.columns {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 50%;
+  height: auto;
+}
+
+.communityHeader, .sustainHeader {
+  font-size: 45px;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  color: #6352a2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 450px;
+  height: auto;
+  filter: drop-shadow(-3px 10px 20px rgba(0, 0, 0, 0.25));
+  background-color: #e7f6f3;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
+  margin-top: 30px;
+}
+
+.boxHead {
+  font-size: 30px;
+  font-weight: bold;;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  color:#0a6154;
+  padding: 5px 5px 5px 5px;
+}
+
+.boxBody {
+  font-size: 17px;
+  line-height: 1.5;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  text-align: left;
+  color: black;
+  padding: 5px 5px 5px 5px;
+}
