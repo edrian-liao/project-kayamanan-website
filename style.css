@@ -288,7 +288,7 @@ header {
 }
 
 .aboutus {
-  background-color: white;
+  background-color: #e7f6f3;
   padding-bottom: 100px;
   padding-top: 100px;
   display: flex;
@@ -303,12 +303,15 @@ header {
   margin-right: 5%;
 }
 
-.aboutusContent h2 {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: normal;
-  text-align: left;
-  font-size: 40px;
-  color: #6352a2;
+.aboutusContent h1 {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 72px;
+  color: #6452A2;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 .aboutusContent p {
@@ -329,6 +332,20 @@ header {
   margin-left: 5%;
   flex: 0 1 auto;
   float: left;
+}
+
+.aboutuscards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  min-height: 300px;
+  padding-bottom: 20px;
 }
 
 .polygon img {
@@ -651,7 +668,7 @@ header {
 }
 
 .ourobjectives {
-  background-color: white;
+  background-color: #e7f6f3;
 }
 
 .ourobjectives h2 {
@@ -665,6 +682,73 @@ header {
   line-height: 72px;
   color: #6452A2;
 }
+
+.ourprogram {
+    background-color: #e7f6f3;
+    padding-bottom: 80px;
+    padding-left: 130px;
+    padding-right: 130px;
+    scroll-margin-top: 100px;
+  
+}
+
+.ourprogram h2 {
+  text-align: center;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 72px;
+  color: #6452A2;
+}
+
+.OurProgramsCard {
+  background-color: #e7f6f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5% 0 5%;
+  gap: 10%;
+  padding-bottom: 20px;
+}
+
+.OurProgramsSmallCards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2); */
+  width: 50%;
+  min-height: 20px;
+  max-width: 700px;
+}
+
+
+.OurProgramsSmallCards h4 {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: capitalize;
+  color: #0A6154;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.OurProgramsSmallCards p {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #000000;
+  text-align: left;
+}
+
 
 .elements-row-1 {
   margin: 0 13%;
@@ -764,4 +848,69 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 
 .polygon2 {
   margin-top: -130px;
+}
+
+/* Our Programs Design Portion */
+
+.programTitle {
+  font-size: 40px;
+  font-family: "Fira Sans", "PT Sans", sans-serif;
+  font-weight: bold;
+  color: #6352a2;
+  text-align: center;
+  padding-top: 30px;
+  background-color:#a9cdc8;
+}
+
+.programs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color:#a9cdc8;
+  padding-bottom: 30px;
+}
+
+.columns {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 50%;
+  height: auto;
+}
+
+.communityHeader, .sustainHeader {
+  font-size: 45px;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  color: #6352a2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 450px;
+  height: auto;
+  filter: drop-shadow(-3px 10px 20px rgba(0, 0, 0, 0.25));
+  background-color: #e7f6f3;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
+  margin-top: 30px;
+}
+
+.boxHead {
+  font-size: 30px;
+  font-weight: bold;;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  color:#0a6154;
+  padding: 5px 5px 5px 5px;
+}
+
+.boxBody {
+  font-size: 17px;
+  line-height: 1.5;
+  font-family: "PT Sans", "Metropolis", sans-serif;
+  text-align: left;
+  color: black;
+  padding: 5px 5px 5px 5px;
 }
