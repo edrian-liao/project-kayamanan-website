@@ -1,7 +1,15 @@
+function onOpen() {
+  SpreadsheetApp.getUi().alert('To update the database, click "Update Data" on Menu. Then, click "Run Script".');
+  SpreadsheetApp.getUi()
+      .createMenu('Update Data')
+      .addItem('Run script', 'getData')
+      .addToUi();
+}
+
 function getData() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheetByName('Sheet1');
-  
+
   var data = getFirebaseData("users");
   var row = 2;
   for (var user in data) {
