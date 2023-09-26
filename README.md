@@ -32,7 +32,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebas
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
 import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
 ```
-4. App Script extension on Google Spreadsheet enables the users to fetch data from the database whenever it is opened by the user (not real-time). This feature is enabled by 'backend_script.js`.
+4. App Script extension on Google Spreadsheet enables the users to fetch data from the database whenever it is opened by the user (not real-time). This feature is enabled by `backend_script.js`.
 
 ```JavaScript
 function getFirebaseData(data) {
